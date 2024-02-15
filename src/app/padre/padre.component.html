@@ -1,0 +1,13 @@
+<button  (click)="generar()">Generar </button>
+<button (click)="recargar()">Recargar</button>
+<app-hijo
+ [Aleatorio1]="numero1"
+ [Aleatorio2]="numero2"
+ (devolverNum1)="recibir1($event)"
+ (devolverNum2)="recibir2 ($event)">
+</app-hijo>
+
+<p>Número1 {{numero1}}</p>
+<p>Número2 {{numero2}}</p>
+<p>Resultado Suma {{suma}}</p>
+<p>Resultado Produto {{producto}}</p>
